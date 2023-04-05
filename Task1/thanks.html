@@ -13,17 +13,20 @@
         “Thanks a ton for taking out your precious time and for completing the
         survey"
       </h1>
-      <h3>Email Address:</h3>
-      <h3>Contact Number:</h3>
+      <h3>Email Address: <span id="email"></span></h3>
+      <h3>Contact Number: <span id="mobile"></span></h3>
       <button id="btn1">Back to survey</button>
     </div>
   </body>
 </html>
 <script>
-      var stuArr= JSON.parse(localStorage.getItem("formDetails"));
-  console.log(stuArr)
+  var getData = JSON.parse(localStorage.getItem("formDetails"));
 
-
+  function render() {
+    document.getElementById("email").innerText = getData.email;
+    document.getElementById("mobile").innerText = getData.country_code.concat(-getData.mobile);
+  }
+  render();
   document.getElementById("btn1").addEventListener("click", function () {
     window.location.href = "index.html";
   });

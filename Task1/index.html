@@ -21,7 +21,7 @@
         <h4>consulation with an expert</h4>
         <form id="form">
           <input
-            type="text"
+            type="email"
             id="email"
             name="email"
             placeholder="Enter your email"
@@ -49,25 +49,45 @@
   </body>
 </html>
 <script>
+  var getData= JSON.parse(localStorage.getItem("formDetails"));
   document.getElementById("form").addEventListener("submit", formFunction);
-  var stuArr= JSON.parse(localStorage.getItem("formDetails"));
-  console.log(stuArr)
 
   function formFunction(e) {
     e.preventDefault();
     let email = document.querySelector("#email").value;
+    console.log(email)
     let mobile = document.querySelector("#mobile").value;
-    let country_Code = document.getElementById("country-code").value;
+    let country_code = document.getElementById("country-code").value;
 
     var objForm = {
       email,
       mobile,
-      country_Code,
+      country_code,
     };
-    
-
     localStorage.setItem("formDetails", JSON.stringify(objForm));
-
-    href = "thanks.html";
+    window.location.href = "thanks.html";
   }
+
+const mobileNumberInput = document.getElementById('mobile');
+mobileNumberInput.addEventListener('input', () => {
+  let inputValue = mobileNumberInput.value.replace(/\D/g, '');
+  if (inputValue.length === 10) {
+    mobileNumberInput.setCustomValidity('');
+  } else {
+    mobileNumberInput.setCustomValidity('You have entered an invalid Mobile number');
+  }
+});
+
+
+const emailInput = document.getElementById('email');
+emailInput.addEventListener('input', () => {
+  let inputValue = emailInput.value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (emailRegex.test(inputValue) && inputValue.length >= 6) {
+    emailInput.setCustomValidity('');
+  } else {
+    emailInput.setCustomValidity('You have entered an invalid email address');
+  }
+});
+
 </script>
