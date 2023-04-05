@@ -10,8 +10,7 @@
   <body>
     <div id="outer">
       <div id="left">
-        <img src="" alt="background" />
-        <img src="" alt="person" />
+        <img src="im1.png" alt="person" />
       </div>
       <div id="right">
         <img
@@ -20,17 +19,55 @@
         />
         <h1>Get a FREE</h1>
         <h4>consulation with an expert</h4>
-        <form action="">
-          <input type="text" placeholder="Enter your email" required />
-          <input type="text" placeholder="Enter your mobile" required />
-          <button id="btn">Talk to Us</button>
+        <form id="form">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <div id="phone">
+            <select id="country-code" name="country-code" required>
+              <option value="">country-code</option>
+              <option value="+1">+1 (USA)</option>
+              <option value="+91">+91 (India)</option>
+              <option value="+44">+44 (UK)</option>
+            </select>
+            <input
+              type="number"
+              id="mobile"
+              name="mobile"
+              placeholder="Enter your mobile"
+              required
+            />
+          </div>
+          <button id="btn" type="submit">Talk to Us</button>
         </form>
       </div>
     </div>
   </body>
 </html>
 <script>
-  document.getElementById("btn").addEventListener("click", function () {
-    window.location.href = "thanks.html";
-  });
+  document.getElementById("form").addEventListener("submit", formFunction);
+  var stuArr= JSON.parse(localStorage.getItem("formDetails"));
+  console.log(stuArr)
+
+  function formFunction(e) {
+    e.preventDefault();
+    let email = document.querySelector("#email").value;
+    let mobile = document.querySelector("#mobile").value;
+    let country_Code = document.getElementById("country-code").value;
+
+    var objForm = {
+      email,
+      mobile,
+      country_Code,
+    };
+    
+
+    localStorage.setItem("formDetails", JSON.stringify(objForm));
+
+    href = "thanks.html";
+  }
 </script>
