@@ -1,0 +1,73 @@
+Context:
+You have two tasks above (Task 1 & Task 2). Take tomorrow’s date as the original due date for
+both tasks. There is a family emergency at your place due to which you won’t be able to meet
+the due date of the above tasks for at least 3 more days. Task 1 is for a low-priority customer
+who has not provided any go-live date to us. Task 2 is for a priority customer whose campaign
+needs to go live in the next 2 days.
+Note - You can only ask for an extension for 1 task from the above.
+Task:
+1. What will be your approach to solving this issue? Explain your strategy and approach to
+this.
+2. How will you inform the 2 separate account managers of both customers about your
+approach? Write an internal message informing Manoj (Account manager for Task 1) &
+Ravi (Account Manager for Task 2) about your respective approach.
+3. How will you communicate the delay of additional 3 days to the customer? (Write an
+email to the customer informing them about this).
+
+
+Ans:
+1. My approach to solving this issue would be to prioritize Task 2, as it is for a priority customer 
+whose campaign needs to go live in the next 2 days. I would immediately inform the Account Manager for Task 1 
+about the situation and request an extension of the due date. I would explain the situation to them and assure 
+them that we will complete the task as soon as possible.
+
+For Task 2, I would work closely with the Account Manager to determine the critical components of the 
+campaign that need to go live in the next 2 days. I would prioritize completing those components first 
+and then work on the remaining parts of the campaign as time allows. I would communicate regularly with 
+the Account Manager to ensure that they are aware of the progress we are making and any potential issues 
+that arise.
+
+2. Internal Message to Manoj:
+Dear Manoj,
+I am writing to inform you that there will be a delay in completing Task 1 due to a family emergency.
+We understand the importance of this task to your client and will complete it as soon as possible. 
+Could you please let us know if an extension of the due date is possible?
+
+Thank you for your understanding.
+
+Best regards,
+Divya Jain
+
+Internal Message to Ravi:
+Dear Ravi,
+
+I am writing to inform you that there will be a delay in completing Task 2 due to a family emergency. 
+We understand the urgency of this task and will prioritize completing the critical components of the 
+campaign that need to go live in the next 2 days. We will keep you updated on our progress and any 
+potential issues that arise.
+
+Thank you for your understanding.
+
+Best regards,
+Divya Jain
+
+3. Email to the customer:
+Dear {Customer Name},
+I am writing to inform you that there will be a delay in completing the task you have assigned to us due to
+a family emergency. We apologize for any inconvenience this may cause and want to assure you that we are 
+working to complete the task as soon as possible.
+
+We estimate that the delay will be approximately 3 more days. As Task 2 is time-sensitive, we will 
+prioritize it and ensure that the critical components are completed within the original deadline. 
+We will then focus on completing Task 1 as soon as possible.
+
+We understand that this delay may impact your schedule, and we will do everything we can to minimize 
+the impact. We will keep you updated on our progress and any potential issues that arise.
+
+Thank you for your understanding.
+
+Best regards,
+Divya Jain
+
+   
+

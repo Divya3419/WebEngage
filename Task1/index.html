@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebEngage</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="outer">
+      <div id="left">
+        <img src="" alt="background" />
+        <img src="" alt="person" />
+      </div>
+      <div id="right">
+        <img
+          src="https://webengage.com/wp-content/uploads/2019/04/WebEngage-logo-1.png"
+          alt="logo"
+        />
+        <h1>Get a FREE</h1>
+        <h4>consulation with an expert</h4>
+        <form action="">
+          <input type="text" placeholder="Enter your email" required />
+          <input type="text" placeholder="Enter your mobile" required />
+          <button id="btn">Talk to Us</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  document.getElementById("btn").addEventListener("click", function () {
+    window.location.href = "thanks.html";
+  });
+</script>

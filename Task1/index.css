@@ -1,0 +1,29 @@
+*{
+    font-family: sans-serif;
+}
+#outer{
+    border:2px  solid black;
+    width:80%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#right h1,h4{
+text-align: center;
+}
+#container{
+    width:50%;
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+}
+#btn1{
+    font-size:18px;
+    color:black;
+    background-color:rgb(241, 241, 8);
+    border:none;
+    border-radius:10px;
+    padding:15px;
+    font-weight: bold;
+    cursor: pointer;
+}
